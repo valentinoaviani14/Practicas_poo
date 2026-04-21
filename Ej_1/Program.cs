@@ -6,7 +6,11 @@ namespace Ej_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Semaforo miSemaforo = new Semaforo("Verde");
+            miSemaforo.mostrarColor();
+
+            miSemaforo.pasoDelTiempo(20);
+            miSemaforo.mostrarColor();
         }
     }
 }
